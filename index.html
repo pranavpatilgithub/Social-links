@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      font-family: "Inter", sans-serif;
+      color: white;
+      position: relative;
+    }
+    .main{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: hsl(0, 0%, 8%);
+      padding: 2%;
+    }
+    .card-container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 350px;
+      height: max-content;
+      background-color: hsl(0, 0%, 12%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      padding: 2%;
+      border-radius: 12px;
+    }
+    .profile-img{
+      width: 100px;
+      height: 100px;
+    }
+    .profile-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .name{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      /* background-color: aqua; */
+    }
+    .name h1{
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .name h2{
+      font-size: 14px;
+      color: hsl(75, 94%, 57%);
+    }
+    .desc p{
+      font-size: 14px;
+    }
+    .social-links{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+    .social-links a{
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      background-color: hsl(0, 0%, 20%);
+      padding: 15px 0;
+      border-radius: 8px;
+    }
+    .social-links a:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 8%);
+    }
+    .attribution{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px;
+      color: white;
+      font-size: 12px;
+    }
+    @media screen and (max-width:375px) {
+      .card-container{
+        width: 320px;
+      }
+      .name h1{
+        font-size: 19px
+      }
+      .name h2{
+        font-size: 11px;
+      }
+      .desc p{
+        font-size: 10px;
+      }
+      .social-links a{
+        font-size: 15px;
+      }
+      .attribution{
+        font-size: 10px;
+      }
+    }
+    @media screen and (max-width:325px) {
+      .card-container{
+        width: 280px;
+      }
+      .name h1{
+        font-size: 19px
+      }
+      .name h2{
+        font-size: 11px;
+      }
+      .desc p{
+        font-size: 10px;
+      }
+      .social-links a{
+        font-size: 15px;
+      }
+      .attribution{
+        font-size: 10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="card-container">
+      <div class="profile-img">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="">
+      </div>
+      <div class="name">
+        <h1>Jessica Randall</h1>
+        <h2>London, United kingdom</h2>
+      </div>
+      <div class="desc">
+        <p>"Front-end developer and avid reader"</p>
+      </div>
+      <div class="social-links">
+        <a href="">Github</a>
+        <a href="">Frontend mentor</a>
+        <a href="">LinkedIn</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/pranavpatilgithub">Pranav</a>.
+  </div>
+</body>
+
+</html>
